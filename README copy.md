@@ -110,7 +110,12 @@ pip install openai -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip install langchain langchain-community langchain-ollama dashscope chromadb -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+安装jsonloader 用于将json数据加载为document类对象
+pip install jq -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+pip install pypdf -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install langchain-chroma chromadb -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ```
 

@@ -89,5 +89,6 @@ if __name__ == '__main__':
     }
 
     res = RagService().chain.invoke({"input": "针织毛衣如何保养？"}, session_config)
+    # res = RagService().chain.invoke("我身高170cm,尺码推荐", session_config)
     print(res)
 

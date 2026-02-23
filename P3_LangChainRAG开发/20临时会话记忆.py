@@ -25,6 +25,7 @@ def print_prompt(full_prompt):
 
 
 base_chain = prompt | print_prompt | model | str_parser
+# base_chain = prompt  | model | str_parser
 
 
 store = {}      # key就是session，value就是InMemoryChatMessageHistory类对象
@@ -52,11 +53,11 @@ if __name__ == '__main__':
         }
     }
 
-    # res = conversation_chain.invoke({"input": "小明有2个猫"}, session_config)
-    # print("第1次执行：", res)
-    #
-    # res = conversation_chain.invoke({"input": "小刚有1只狗"}, session_config)
-    # print("第2次执行：", res)
+    res = conversation_chain.invoke({"input": "小明有2个猫"}, session_config)
+    print("第1次执行：", res)
+
+    res = conversation_chain.invoke({"input": "小刚有1只狗"}, session_config)
+    print("第2次执行：", res)
 
     res = conversation_chain.invoke({"input": "总共有几个宠物"}, session_config)
     print("第3次执行：", res)

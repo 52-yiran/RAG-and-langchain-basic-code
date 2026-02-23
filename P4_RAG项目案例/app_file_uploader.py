@@ -36,7 +36,8 @@ if uploader_file is not None:
 
     # get_value -> bytes -> decode('utf-8')
     text = uploader_file.getvalue().decode("utf-8")
-
+    # st.write(text)
+    #
     with st.spinner("载入知识库中。。。"):       # 在spinner内的代码执行过程中，会有一个转圈动画
         time.sleep(1)
         result = st.session_state["service"].upload_by_str(text, file_name)
@@ -45,3 +46,4 @@ if uploader_file is not None:
 
 
 
+# 启动 D:\ai\RAG-and-langchain-basic-code\P4_RAG项目案例> streamlit run .\app_file_uploader.py
